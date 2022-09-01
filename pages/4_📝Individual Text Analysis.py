@@ -6,7 +6,7 @@ from topic_modeling import freq_words
 
 #*****************************************************************************************************#
 
-st.set_page_config(page_title="Individual General Analysis of Reviews of Touristic Sites in Lebanon",
+st.set_page_config(page_title="Individual Text Analysis of Reviews of Touristic Sites in Lebanon",
                    page_icon="🏙️",
                    layout="wide")
 
@@ -115,8 +115,6 @@ with tab3:
 
     frequent_words_fig = freq_words(reviews_queried["reviewsPreprocessed"])
     st.pyplot(frequent_words_fig)
-
-
 
 
 

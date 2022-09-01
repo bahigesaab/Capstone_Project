@@ -14,12 +14,12 @@ def location_and_gov(location, governorate, box):
 
 #*****************************************************************************************************#
 
-st.set_page_config(page_title="Comparative General Analysis of Reviews of Touristic Sites in Lebanon",
+st.set_page_config(page_title="Comparative Text Analysis of Reviews of Touristic Sites in Lebanon",
                    page_icon="🌃",
                    layout="wide")
 
 
-st.title("Comparative General Analysis of Reviews of Touristic Sites in Lebanon")
+st.title("Comparative Text Analysis of Reviews of Touristic Sites in Lebanon")
 
 st.markdown("""---""")
 
