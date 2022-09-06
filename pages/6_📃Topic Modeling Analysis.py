@@ -60,13 +60,17 @@ def fig_width_and_length(topics_number):
     return height, width
 
 
-city_cell, attraction_cell = st.columns(2)
+category_cell, city_cell, attraction_cell = st.columns(3)
 
+with category_cell:
+    category_box = selection_box(reviews_tm_nouns, "category", "Category of Attraction")
+
+    reviews_by_category = reviews_tm_nouns.query("category==@category_box")
 
 with city_cell:
     city_box = selection_box(reviews_tm_nouns, "location", "City")
 
-    reviews_by_city = reviews_tm_nouns.query("location==@city_box")
+    reviews_by_city = reviews_by_category.query("location==@city_box")
 
 
 with attraction_cell:

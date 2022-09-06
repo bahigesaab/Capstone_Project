@@ -134,7 +134,7 @@ def display_world_map(df, title, sizing_theme, locations, scope="world"):
     fig = px.choropleth(df, locations=locations,
                         labels={'user_country': 'Country', 'color': 'Number of Reviewers'},
                         locationmode='country names', color=sizing_theme,
-                        color_continuous_scale='Inferno_r',
+                        color_continuous_scale='rainbow',
                         scope=scope, title=title)
 
     return fig
