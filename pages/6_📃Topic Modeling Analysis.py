@@ -60,7 +60,7 @@ def fig_width_and_length(topics_number):
     return height, width
 
 
-city_cell, attraction_cell = st.columns(3)
+city_cell, attraction_cell = st.columns(2)
 
 with city_cell:
     city_box = selection_box(reviews_tm_nouns, "location", "City")
